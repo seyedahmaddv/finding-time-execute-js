@@ -1,0 +1,21 @@
+function test(){
+  for(let i = 0; i < 1000000000 ; i++){
+  
+  }
+}
+let start = Date.now();
+test();
+let timeTaken = Date.now() - start;
+console.log("Total time taken : " + timeTaken + " milliseconds");
+//Total time taken : 1065 milliseconds
+
+/*
+Explanation
+In the above code,
+
+Line 1–5: We create a function test with a for loop.
+Line 6: We get the current time in milliseconds and store in a variable, start.
+Line 7: We call the test method.
+Line 8: We calculate the time taken to execute the test function by subtracting the current time from the start time, which we will store before executing the function.
+Line 9: We print the time taken to execute the test function.
+*/
