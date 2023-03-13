@@ -15,6 +15,7 @@ We use the Date.now() method to get the current time in milliseconds. The method
 #Using console.time and console.timeEnd()
 -----------------------
 We call the console.time() to initiate a timer with a name. We call the console.timeEnd() to stop the timer. This is used to get the time taken to execute a function.
+
 #Using performace.now
 -----------------------
 The performance.now method returns the time passed (Read about time origin here). This method returns the time as floating-point numbers with up to microsecond precision.
