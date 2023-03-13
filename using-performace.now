@@ -1,0 +1,29 @@
+<html>
+ <head>
+ </head>
+ <body>
+   Click run button and check the console
+   <script>
+     function test(){
+      for(let i = 0; i < 1000000000; i++){
+      
+      }
+    }
+    let start = performance.now();
+    test();
+    let timeTaken = performance.now() - start;
+    console.log("Total time taken : " + timeTaken + " milliseconds");
+  </script>
+ </body>
+</html>
+
+/*
+Explanation
+In the above code:
+
+Line 7–11: We create a function test with a for loop.
+Line 12: We call the performance.now method. This will return the elapsed time since the time origin. We store this value in the start variable.
+Line 13: We call the test method.
+Line 14: We call the performance.now method to get the current elapsed time since the time origin. We subtract this value from the value obtained at the start. This will give the time taken to execute the test function.
+Line 15: We print the time taken to execute the test function
+*/
