@@ -1,0 +1,18 @@
+function test(){
+  for(let i = 0; i < 1000000000; i++){
+  
+  }
+}
+console.time("test_timer");
+test();
+console.timeEnd("test_timer");
+
+/*
+Explanation
+In the above code:
+
+Line 1–5: We create a function test with a for loop.
+Line 6: We call the console.time method with test_timer as an argument. This will start the timer with test_timer as the label.
+Line 7: We call the test method.
+Line 8: We call the console.timeEnd method for the label test_timer. This will stop the timer and print the number of milliseconds between the call of console.time and console.timeEnd.
+*/
